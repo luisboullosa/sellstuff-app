@@ -1,5 +1,6 @@
 {
   "name": "ecom_liatelier",
+  "type": "module",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
@@ -7,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/luisboullosa/sellstuff-app#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
